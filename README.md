@@ -4,8 +4,45 @@
 
 ### Categories
 
+- [Javascript](#javascript)
 - [Mac](#mac)
 - [Server](#server)
+
+---
+
+### Javascript
+
+#### Merge/extend properties of two objects
+
+Similar to jQuery or Underscore extend, but you can do it with pure Javascript.
+
+```
+function extend(a, b) {
+	for( var key in b ) { 
+		if( b.hasOwnProperty( key ) ) {
+			a[key] = b[key];
+		}
+	}
+	return a;
+}
+```
+Then you use it like this:
+
+```
+var defaults = {validate: false, limit: 5};
+var options = {validate: true};
+
+// we extend empty objects so that we do not mutate the defaults object.
+var settings = extend({}, defaults);
+
+// If we just want to extend the settings object, we don't need to store into a new variable
+extend(settings, options);
+
+// or you can just extend defaults and options directly and save it to settings var.
+var settings = extend(defaults, options)
+```
+
+Thanks to [Codrops](http://tympanus.net/codrops/) tutorials for this.
 
 ---
 
@@ -14,6 +51,8 @@
 #### Keyboard Shortcut to Open Emoji Insert
 
 On any text editor, press `Ctrl + ⌘ + space` to open up Emoji & Special Characters window.
+
+---
 
 ### Server
 
