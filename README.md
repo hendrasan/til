@@ -48,6 +48,10 @@ Thanks to [Codrops](http://tympanus.net/codrops/) tutorials for this.
 
 ### Mac
 
+#### Keyboard Shortcut to Show/Hide Hidden Files and Folders in Finder
+
+Open Finder, go to any folder and press `⌘ + Shift + .` to show/hide hidden files and folders.
+
 #### Keyboard Shortcut to Open Emoji Insert
 
 On any text editor, press `Ctrl + ⌘ + space` to open up Emoji & Special Characters window.
